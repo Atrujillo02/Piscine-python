@@ -23,6 +23,7 @@ NESTED_MORSE = {
     "9": "----. "
 }
 
+
 def string_to_morse(str):
     """
     This function converts a string to Morse code.
@@ -37,9 +38,8 @@ def string_to_morse(str):
 
     for char in str:
         morse_list.append(NESTED_MORSE[char])
-    
-    return ''.join(morse_list)  
 
+    return ''.join(morse_list)
 
 
 def main():
@@ -51,9 +51,11 @@ def main():
         assert len(sys.argv) == 2, "the arguments are bad"
 
         input_str = sys.argv[1]
-        assert all(char.isalnum() or char == ' ' for char in input_str), "the arguments are bad"
+        assert all(char.isalnum() or
+                   char == ' ' for char in input_str), "the arguments are bad"
         input_str = input_str.upper()
-        assert all(char in NESTED_MORSE for char in input_str), "the arguments are bad"
+        assert all(char in NESTED_MORSE
+                   for char in input_str), "the arguments are bad"
         print(string_to_morse(input_str))
     except AssertionError as e:
         print("AssertionError:", e)

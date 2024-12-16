@@ -1,9 +1,11 @@
 import sys
 from ft_filter import ft_filter
 
+
 def filter_string(str, word_length):
     """
-    This function filters a string and returns a list of words with a length greater than a given number.
+    This function: filters a string and
+    returns a list of words with a length greater than a given number.
 
     Parameters:
         str: The string to filter.
@@ -14,11 +16,13 @@ def filter_string(str, word_length):
     """
     return ft_filter(lambda word: len(word) > word_length, str.split())
 
+
 def main():
     """
-    Main function of the program. It checks if the user has provided a text and a number as arguments.
+    Main function of the program.
+    It checks if the user has provided a text and a number as arguments.
     Then it calls the filter_string function with the given text and number.
-    
+
     Parameters:
         None
 
@@ -40,6 +44,7 @@ def main():
         print("AssertionError:", e)
     except ValueError:
         print("AssertionError: the arguments are bad")
+
 
 if __name__ == "__main__":
     main()
