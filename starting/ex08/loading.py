@@ -1,4 +1,4 @@
-def ft_tqdm(lst: range) -> None:
+def ft_tqdm(lst: range):
     """
     This function mimics tqdm using the yield operator, with a dynamically
     resizing progress bar based on the terminal width.
