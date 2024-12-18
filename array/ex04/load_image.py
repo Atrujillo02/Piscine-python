@@ -21,4 +21,4 @@ def ft_load(path: str) -> np.array:
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
     print(f"The shape of image is: {img.shape}")
-    return img 
+    return img

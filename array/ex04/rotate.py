@@ -22,7 +22,8 @@ def display_image(img, title="Image"):
 
 def manual_transpose(img):
     """
-    This function transposes a 2D or 3D image manually (without using library functions).
+    This function transposes a 2D or 3D image manually
+    (without using library functions).
 
     Args:
         img (np.array): The image to transpose (NumPy array).
@@ -63,6 +64,7 @@ def main():
     print(transposed)
 
     display_image(transposed, title="Transposed Image")
+
 
 if __name__ == "__main__":
     main()

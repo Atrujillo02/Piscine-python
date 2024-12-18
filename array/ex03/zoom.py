@@ -21,7 +21,9 @@ def display_image(img, title="Image"):
 
 def main():
     """
-    This function loads an image, prints its shape, zooms into a specific region,
+    This function loads an image,
+    prints its shape,
+    zooms into a specific region,
     and displays the zoomed image.
 
     Args:

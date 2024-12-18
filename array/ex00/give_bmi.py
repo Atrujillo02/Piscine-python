@@ -2,7 +2,7 @@ import numpy as np
 
 
 def give_bmi(height: list[int | float],
-            weight: list[int | float]) -> list[int | float]:
+             weight: list[int | float]) -> list[int | float]:
     """
     This function makes a new array starting in start index
     and finishing in end index.
@@ -17,7 +17,6 @@ def give_bmi(height: list[int | float],
     """
     heights_np = np.array(height)
     weights_np = np.array(weight)
-
 
     assert heights_np.size == weights_np.size, "Lists are not of equal length."
     assert (
@@ -36,11 +35,11 @@ def give_bmi(height: list[int | float],
 def apply_limit(bmi: list[int | float], limit: int) -> list[bool]:
     """
     Check if BMI values exceed a given limit.
-    
+
     Args:
         bmi (list[int | float]): List of BMI values (float or int).
         limit (int): Threshold to compare BMI values.
-    
+
     Returns:
         list[bool]: A list of booleans: True if BMI > limit, otherwise False.
     """
